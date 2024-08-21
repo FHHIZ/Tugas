@@ -11,4 +11,7 @@ const output = document.getElementById('output').innerHTML = `
 `;
 
 let fruit = ["Apple", "Banana", "Manggo"]; 
-fot
+let fruitbasket = document.getElementById("output")
+for (let i = 0; i < fruit.length; i++) {
+    let threefruit = document.createElement("p")
+}
