@@ -53,3 +53,28 @@ students.forEach((item, index) => {
     output += index + "; " + item + "<br>";
 });
 document.getElementById("output5").innerHTML = output;
+
+let car = {Brand: "Toyota", Model: "Corolla", Year: 2020};
+
+let garage = "";
+
+for (let key in car) {
+    garage += key + ": " + car[key] + "<br>";
+}
+
+document.getElementById("output6").innerHTML = garage;
+
+let cars = [
+    {brand: "Toyota", model: "Corolla", year: 2020},
+    {brand: "Honda", model: "Civic", year: 2019},
+    {brand: "Ford", model: "Mustang", year: 2021},
+    {brand: "Chevrolet", model: "Malibu", year: 2018}
+];
+
+let cargarage = "";
+
+cars.forEach((car, index) => {
+    cargarage += "Mobil ke-" + (index + 1) + ": " + car.brand + " " + car.model + " (" + car.year + ")<br>";
+});
+
+document.getElementById("output7").innerHTML = cargarage;
